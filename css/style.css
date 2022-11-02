@@ -1,0 +1,80 @@
+header {
+    background-color: rgb(98,117,127);
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: rgb(25,25,25);
+    margin: 0px;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    color: rgb(98,117,127);
+    font-weight: bold;
+    font-size: 90px;
+}
+
+td {
+    text-align: center;
+}
+
+.logo {
+    float: left;
+    height: 100%;
+    width: 40%;
+}
+
+.nav {
+    float: right;
+    height: 100%;
+    width: 60%;
+}
+
+.icon {
+    display: inline-block;
+    float: left;
+    position: relative;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: Papyrus;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.icon:hover {
+    color: rgb(150,150,150);
+}
+
+.best-movie {
+    width: 100%;
+    table-layout: fixed;
+    overflow: hidden;
+    border: solid black;
+}
+
+.best-movie_title {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.best-movie_description {
+    font-size: 50px;
+}
+
+.best-movie_actors {
+    font-size: 30px;
+}
+
+
+
+
+
