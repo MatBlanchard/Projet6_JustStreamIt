@@ -17,7 +17,12 @@ p {
 h1 {
     color: rgb(98,117,127);
     font-weight: bold;
-    font-size: 90px;
+    font-size: 3vw;
+}
+
+table {
+    width: 100%;
+    overflow: hidden;
 }
 
 td {
@@ -27,27 +32,25 @@ td {
 .logo {
     float: left;
     height: 100%;
-    width: 40%;
 }
 
 .nav {
-    float: right;
+    float: left;
     height: 100%;
-    width: 60%;
+    position: relative;
+    left: 30%;
 }
 
 .icon {
-    display: inline-block;
-    float: left;
-    position: relative;
-    padding-top: 23px;
-    padding-bottom: 23px;
-    padding-left: 25px;
+    align: center;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
     text-decoration: none;
     color: white;
     font-family: Papyrus;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .icon:hover {
@@ -55,24 +58,97 @@ td {
 }
 
 .best-movie {
-    width: 100%;
-    table-layout: fixed;
-    overflow: hidden;
-    border: solid black;
+    width: 70%;
+    position: relative;
+    left: 15%;
 }
 
-.best-movie_title {
+#best-movie_title {
     font-weight: bold;
-    font-size: 70px;
+    font-size: 2.5vw;
 }
 
-.best-movie_description {
-    font-size: 50px;
+#best-movie_description {
+    font-size: 2vw;
 }
 
-.best-movie_actors {
-    font-size: 30px;
+.infos_button {
+    background-color: rgb(98,117,127);
+    border-radius: 2vw;
+    height: 3vw;
+    width: 10vw;
+    font-weight: bold;
+    font-size: 1.5vw;
+    border: none;
+    box-shadow: 0.5vw 0.5vw 0.5vw black;
+    cursor:pointer;
 }
+
+.infos_button:hover {
+    box-shadow: 0.3vw 0.3vw 0.3vw black;
+    transform: scale(0.97);
+}
+
+.infos_button:active {
+    box-shadow: 0.1vw 0.1vw 0.1vw black;
+    transform: scale(0.94);
+}
+
+#carrousel {
+    width: 50%;
+    height: 20vw;
+    position: relative;
+    left: 25%;
+    overflow: hidden;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    transform: translate(0.5vw);
+}
+
+.image {
+    width: 17vw;
+    height: 100%;
+    margin: 0px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button {
+    position: absolute;
+    cursor: pointer;
+    width: 4vw;
+    top: 7vw;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+#g {
+    left:10px;
+}
+
+#g:hover {
+    transform: scale(1.1);
+}
+
+#d {
+    right:10px;
+    transform: rotate(180deg);
+}
+
+#d:hover {
+    transform: rotate(180deg) scale(1.1);
+}
+
+
+
 
 
 

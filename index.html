@@ -6,35 +6,50 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <header>
-        <div  class="logo">
-            <img src="img/logo.png" style="height:100%">
-        </div>
-        <div class="nav">
-            <a class="icon" href="#">Home</a>
-            <a class="icon" href="#">Categories</a>
-        </div>
+        <table height="100%">
+            <tr>
+                <td width="100em">
+                    <img src="img/logo.png" height="100%" width="100%" />
+                </td>
+                <td align="center">
+                    <a class="icon" href="#">Home</a>
+                    <a class="icon" href="#">Categories</a>
+                </td>
+            </tr>
+        </table>
     </header>
     <body>
         <table class="best-movie">
             <tr>
-                <td style="width:68%">
+                <td width="68%">
                     <h1>Best Movie :</h1>
                 </td>
                 <td  rowspan="4">
-                    <img id="best-movie_pic" width="100%" height="100%" src="">
+                    <img id="best-movie_pic" width="100%" height="100%" src="" />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <p class="best-movie_title" id="best-movie_title"></p>
+                    <p id="best-movie_title"></p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <p class="best-movie_description" id="best-movie_description"></p>
+                    <button class="infos_button">More infos</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="best-movie_description"></p>
                 </td>
             </tr>
         </table>
+        <div id="carrousel">
+            <div id="container">
+            </div>
+            <img src="img/button.png" class="button" id="g" onclick="translateLeft()"/>
+            <img src="img/button.png" class="button" id="d" onclick="translateRight()"/>
+        </div>
     </body>
     <script src="./js/script.js"></script>
 </html>
