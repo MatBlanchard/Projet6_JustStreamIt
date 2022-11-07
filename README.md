@@ -5,7 +5,7 @@ Ce programme a été réalisé dans le cadre du projet 6 de la formation python 
 
 https://www.python.org/downloads/
 - Suivez les instructions suivantes afin de mettre en place la version locale de l'API Imdb:
-- 
+
 https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR
 - Ensuite, clonez ce repository.
 ```
