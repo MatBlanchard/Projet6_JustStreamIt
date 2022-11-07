@@ -1,5 +1,5 @@
 # OpenClassrooms: Projet 6 - Interface web 
-Ce programe a été réalisé dans le cadre du projet 6 de la formation python d'OpenClassrooms. Il s'agit d'une interface utilisateur pour une application web en python.
+Ce programme a été réalisé dans le cadre du projet 6 de la formation python d'OpenClassrooms. Il s'agit d'une interface utilisateur pour une application web en python.
 ## Installation:
 - Commencez par installer Python.
 ```
