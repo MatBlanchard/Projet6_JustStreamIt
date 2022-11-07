@@ -20,6 +20,14 @@ h1 {
     font-size: 3vw;
 }
 
+h3 {
+    position: relative;
+    color: rgb(98,117,127);
+    font-weight: bold;
+    font-size: 2vw;
+    margin: 0px;
+}
+
 table {
     width: 100%;
     overflow: hidden;
@@ -72,6 +80,16 @@ td {
     font-size: 2vw;
 }
 
+#best-movie_pic {
+    width: 100%;
+    height: 100%;
+}
+
+#best-movie_pic:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 .infos_button {
     background-color: rgb(98,117,127);
     border-radius: 2vw;
@@ -94,18 +112,17 @@ td {
     transform: scale(0.94);
 }
 
-#carrousel {
+.carrousel {
     width: 50%;
-    height: 20vw;
+    height: 22vw;
     position: relative;
     left: 25%;
     overflow: hidden;
 }
 
-#container {
-    width: 100%;
-    height: 100%;
-    transform: translate(0.5vw);
+.container {
+    height: 20vw;
+    transform: translate(-33.5vw);
 }
 
 .image {
@@ -121,7 +138,7 @@ td {
     position: absolute;
     cursor: pointer;
     width: 4vw;
-    top: 7vw;
+    top: 9vw;
     opacity: 0.8;
     transition: all 0.3s ease;
 }
@@ -130,20 +147,20 @@ td {
     opacity: 1;
 }
 
-#g {
+.g {
     left:10px;
 }
 
-#g:hover {
+.g:hover {
     transform: scale(1.1);
 }
 
-#d {
+.d {
     right:10px;
     transform: rotate(180deg);
 }
 
-#d:hover {
+.d:hover {
     transform: rotate(180deg) scale(1.1);
 }
 

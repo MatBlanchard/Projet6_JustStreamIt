@@ -25,7 +25,7 @@
                     <h1>Best Movie :</h1>
                 </td>
                 <td  rowspan="4">
-                    <img id="best-movie_pic" width="100%" height="100%" src="" />
+                    <img id="best-movie_pic" src="" />
                 </td>
             </tr>
             <tr>
@@ -44,11 +44,33 @@
                 </td>
             </tr>
         </table>
-        <div id="carrousel">
-            <div id="container">
+        <div id="best-movies_carrousel" class="carrousel">
+            <h3>Best movies</h3>
+            <div id="best-movies_container" class="container">
             </div>
-            <img src="img/button.png" class="button" id="g" onclick="translateLeft()"/>
-            <img src="img/button.png" class="button" id="d" onclick="translateRight()"/>
+            <img src="img/button.png" class="button g" onclick="translateLeft('best-movies')"/>
+            <img src="img/button.png" class="button d" onclick="translateRight('best-movies')"/>
+        </div>
+        <div id="sci-fi_carrousel" class="carrousel">
+            <h3>Best science-fiction movies</h3>
+            <div id="sci-fi_container" class="container">
+            </div>
+            <img src="img/button.png" class="button g" onclick="translateLeft('sci-fi')"/>
+            <img src="img/button.png" class="button d" onclick="translateRight('sci-fi')"/>
+        </div>
+        <div id="animation_carrousel" class="carrousel">
+            <h3>Best animation movies</h3>
+            <div id="animation_container" class="container">
+            </div>
+            <img src="img/button.png" class="button g" onclick="translateLeft('animation')"/>
+            <img src="img/button.png" class="button d" onclick="translateRight('animation')"/>
+        </div>
+        <div id="comedy_carrousel" class="carrousel">
+            <h3>Best comedy movies</h3>
+            <div id="comedy_container" class="container">
+            </div>
+            <img src="img/button.png" class="button g" onclick="translateLeft('comedy')"/>
+            <img src="img/button.png" class="button d" onclick="translateRight('comedy')"/>
         </div>
     </body>
     <script src="./js/script.js"></script>
