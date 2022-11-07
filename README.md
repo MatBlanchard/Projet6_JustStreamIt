@@ -9,9 +9,9 @@ https://www.python.org/downloads/
 ```
 https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR
 ```
-- Ensuite, clonez ce repository dans le dossier JustStreamIt.
+- Ensuite, clonez ce repository.
 ```
-git clone https://github.com/FlorianMgs/OC_P6_JustStreamIt.git
+git clone https://github.com/MatBlanchard/Projet6_JustStreamIt.git
 ```
 ## Utilisation:
 Ouvrez simplement le fichier index.html dans un nouvel onglet de votre navigateur favori !
