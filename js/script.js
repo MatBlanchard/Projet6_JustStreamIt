@@ -35,16 +35,16 @@ async function displayCarrousel(category) {
     var page = await get(url(category));
     for (i=0;i<5;i++) {
         movies_url.push(page.results[i].url)
-    }
+    };
     page = await get(page.next)
     for (i=0;i<3;i++) {
         movies_url.push(page.results[i].url)
-    }
+    };
     if (category == "best-movies") {
         movies_url.shift();
     } else {
         movies_url.pop();
-    }
+    };
     var container = document.getElementById(category + "_container");
     var carrousel = document.getElementById(category + "_carrousel");
     container.style.width = (carrousel.offsetWidth*10/3) + "px"
@@ -52,7 +52,7 @@ async function displayCarrousel(category) {
     await createDiv(movies_url[movies_url.length-1], container);
     for (movie_url of movies_url) {
        await createDiv(movie_url, container);
-    }
+    };
 };
 
 function url(category) {
@@ -60,7 +60,7 @@ function url(category) {
         return "http://localhost:8000/api/v1/titles/?sort_by=-imdb_score";
     } else {
         return "http://localhost:8000/api/v1/titles/?genre=" + category + "&sort_by=-imdb_score";
-    }
+    };
 }
 
 async function createDiv(movie_url, container) {
