@@ -184,9 +184,8 @@ td {
 }
 
 .modal {
-    width: 95%;
-    max-width: 500px;
-    min-width: 300px;
+    width: 85%;
+    max-width: 900px;
     padding: 30px;
     background: rgb(98,117,127);
     border-radius: 5px;
@@ -207,6 +206,20 @@ td {
     cursor: pointer;
     background: #ff365e;
     color: white;
+}
+
+.modal_infos {
+    position: relative;
+    float: left;
+    width: 70%;
+    margin-top: 5%;
+}
+
+.modal_pic {
+    position: relative;
+    float: right;
+    width: 22%;
+    margin-top: 5%;
 }
 
 .modal h1 {

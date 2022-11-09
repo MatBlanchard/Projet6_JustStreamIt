@@ -118,6 +118,7 @@ function toggleModal(movie) {
         document.getElementById("modal_box-office").innerText = "";
     }
     document.getElementById("modal_description").innerText = movie.description;
+    document.getElementById("modal_pic").setAttribute("src", formatImageUrl(movie.image_url));
     document.querySelector(".modal-container").classList.toggle("active");
 }
 
