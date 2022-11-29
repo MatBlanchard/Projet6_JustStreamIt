@@ -1,99 +1,99 @@
-<!doctype html>
-<meta charset="utf-8"/>
-<html>
-    <head>
-        <title>JustStreamIt</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <header>
-        <table height="100%">
-            <tr>
-                <td width="100em">
-                    <img src="img/logo.png" height="100%" width="100%" />
-                </td>
-                <td align="center">
-                    <a class="icon" href="#">Home</a>
-                    <a class="icon" href="#">Categories</a>
-                </td>
-            </tr>
-        </table>
-    </header>
-    <body>
-        <table class="best-movie">
-            <tr>
-                <td width="68%">
-                    <h1>Best Movie :</h1>
-                </td>
-                <td  rowspan="4">
-                    <img id="best-movie_pic" src="" onClick="toggleModal('best-movie')"/>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p id="best-movie_title"></p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="infos_button" onClick="toggleModal('best-movie')">More infos</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p id="best-movie_description"></p>
-                </td>
-            </tr>
-        </table>
-        <div id="best-movies_carrousel" class="carrousel">
-            <h3>Best movies</h3>
-            <div id="best-movies_container" class="container">
-            </div>
-            <img src="img/button.png" class="button g" onclick="updatePosition('best-movies', 1)"/>
-            <img src="img/button.png" class="button d" onclick="updatePosition('best-movies', -1)"/>
-        </div>
-        <div id="sci-fi_carrousel" class="carrousel">
-            <h3>Best science-fiction movies</h3>
-            <div id="sci-fi_container" class="container">
-            </div>
-            <img src="img/button.png" class="button g" onclick="updatePosition('sci-fi',1)"/>
-            <img src="img/button.png" class="button d" onclick="updatePosition('sci-fi',-1)"/>
-        </div>
-        <div id="animation_carrousel" class="carrousel">
-            <h3>Best animation movies</h3>
-            <div id="animation_container" class="container">
-            </div>
-            <img src="img/button.png" class="button g" onclick="updatePosition('animation',1)"/>
-            <img src="img/button.png" class="button d" onclick="updatePosition('animation',-1)"/>
-        </div>
-        <div id="comedy_carrousel" class="carrousel">
-            <h3>Best comedy movies</h3>
-            <div id="comedy_container" class="container">
-            </div>
-            <img src="img/button.png" class="button g" onclick="updatePosition('comedy',1)"/>
-            <img src="img/button.png" class="button d" onclick="updatePosition('comedy',-1)"/>
-        </div>
-        <div class="modal-container">
-            <div class="overlay modal-trigger"></div>
-            <div class="modal">
-                <button class="close-modal modal-trigger">X</button>
-                <div class="modal_infos">
-                    <h1>Title :&nbsp</h1><p id="modal_title"></p>
-                    <h1><br>Categories :&nbsp</h1><p id="modal_category"></p>
-                    <h1><br>Date :&nbsp</h1><p id="modal_date"></p>
-                    <h1><br>Rated :&nbsp</h1><p id="modal_rated"></p>
-                    <h1><br>IMDB score :&nbsp</h1><p id="modal_score"></p>
-                    <h1><br>Directors :&nbsp</h1><p id="modal_director"></p>
-                    <h1><br>Actors :&nbsp</h1><p id="modal_actor"></p>
-                    <h1><br>Duration :&nbsp</h1><p id="modal_duration"></p>
-                    <h1><br>Country :&nbsp</h1><p id="modal_country"></p>
-                    <h1><br>Box-office :&nbsp</h1><p id="modal_box-office"></p>
-                    <h1><br>Description :&nbsp</h1><p id="modal_description"></p>
+    <!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>JustStreamIt</title>
+            <link rel="stylesheet" href="css/style.css">
+        </head>
+        <body>
+            <header>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="img/logo.png" class="logo" alt="Logo JustStreamIt">
+                        </td>
+                        <td class="icons">
+                            <a class="icon" href="#">Home</a>
+                            <a class="icon" href="#">Categories</a>
+                        </td>
+                    </tr>
+                </table>
+            </header>
+            <table class="best-movie">
+                <tr>
+                    <td class="best-movie_description">
+                        <h1>Best Movie :</h1>
+                    </td>
+                    <td  rowspan="4">
+                        <img id="best-movie_pic" src="img/loading.gif" alt="Best-movie pic" onClick="toggleModal('best-movie')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="best-movie_title"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="infos_button" onClick="toggleModal('best-movie')">More infos</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="best-movie_description"></p>
+                    </td>
+                </tr>
+            </table>
+            <div id="best-movies_carrousel" class="carrousel">
+                <h3>Best movies</h3>
+                <div id="best-movies_container" class="container">
                 </div>
-                <div class="modal_pic">
-                    <img id="modal_pic" src="" width="100%" height="100%"/>
+                <img src="img/button.png" alt="Left Arrow" class="button g" onclick="updatePosition('best-movies', 1)">
+                <img src="img/button.png" alt="Right Arrow" class="button d" onclick="updatePosition('best-movies', -1)">
+            </div>
+            <div id="sci-fi_carrousel" class="carrousel">
+                <h3>Best science-fiction movies</h3>
+                <div id="sci-fi_container" class="container">
+                </div>
+                <img src="img/button.png" alt="Left Arrow" class="button g" onclick="updatePosition('sci-fi',1)">
+                <img src="img/button.png" alt="Right Arrow" class="button d" onclick="updatePosition('sci-fi',-1)">
+            </div>
+            <div id="animation_carrousel" class="carrousel">
+                <h3>Best animation movies</h3>
+                <div id="animation_container" class="container">
+                </div>
+                <img src="img/button.png" alt="Left Arrow" class="button g" onclick="updatePosition('animation',1)">
+                <img src="img/button.png" alt="Right Arrow" class="button d" onclick="updatePosition('animation',-1)">
+            </div>
+            <div id="comedy_carrousel" class="carrousel">
+                <h3>Best comedy movies</h3>
+                <div id="comedy_container" class="container">
+                </div>
+                <img src="img/button.png" alt="Left Arrow" class="button g" onclick="updatePosition('comedy',1)">
+                <img src="img/button.png" alt="Right Arrow" class="button d" onclick="updatePosition('comedy',-1)">
+            </div>
+            <div class="modal-container">
+                <div class="overlay modal-trigger"></div>
+                <div class="modal">
+                    <button class="close-modal modal-trigger">X</button>
+                    <div class="modal_infos">
+                        <h1>Title :&nbsp;</h1><p id="modal_title"></p>
+                        <h1><br>Categories :&nbsp;</h1><p id="modal_category"></p>
+                        <h1><br>Date :&nbsp;</h1><p id="modal_date"></p>
+                        <h1><br>Rated :&nbsp;</h1><p id="modal_rated"></p>
+                        <h1><br>IMDB score :&nbsp;</h1><p id="modal_score"></p>
+                        <h1><br>Directors :&nbsp;</h1><p id="modal_director"></p>
+                        <h1><br>Actors :&nbsp;</h1><p id="modal_actor"></p>
+                        <h1><br>Duration :&nbsp;</h1><p id="modal_duration"></p>
+                        <h1><br>Country :&nbsp;</h1><p id="modal_country"></p>
+                        <h1><br>Box-office :&nbsp;</h1><p id="modal_box-office"></p>
+                        <h1><br>Description :&nbsp;</h1><p id="modal_description"></p>
+                    </div>
+                    <div class="modal_pic_container">
+                        <img class="modal_pic" id="modal_pic" src="img/loading.gif" alt="Modal pic">
+                    </div>
                 </div>
             </div>
-        </div>
-    </body>
-    <script src="./js/script.js"></script>
-</html>
+            <script src="./js/script.js"></script>
+        </body>
+    </html>

@@ -38,8 +38,9 @@ td {
 }
 
 .logo {
+    position: relative;
     float: left;
-    height: 100%;
+    height: 5em;
 }
 
 .nav {
@@ -49,8 +50,11 @@ td {
     left: 30%;
 }
 
+.icons {
+    transform: translate(-10%);
+}
+
 .icon {
-    align: center;
     height: 100%;
     padding-left: 15px;
     padding-right: 15px;
@@ -69,6 +73,10 @@ td {
     width: 70%;
     position: relative;
     left: 15%;
+}
+
+.best-movie_description {
+    width: 68%;
 }
 
 #best-movie_title {
@@ -215,11 +223,16 @@ td {
     margin-top: 5%;
 }
 
-.modal_pic {
+.modal_pic_container {
     position: relative;
     float: right;
     width: 22%;
     margin-top: 5%;
+}
+
+.modal_pic {
+    width: 100%;
+    height: 100%;
 }
 
 .modal h1 {
